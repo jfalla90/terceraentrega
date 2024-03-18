@@ -1,0 +1,12 @@
+@mixin footer($display,$justify,$padding){
+    display: $display;
+    justify-content:$justify;
+    padding:$padding;
+}
+
+@mixin contacto-footer($flex,$block,$none,$center){
+    list-style: $none;
+    display: $block;
+    display: $flex;
+    justify-content: $center;
+}

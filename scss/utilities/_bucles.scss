@@ -1,0 +1,9 @@
+@for $i from 1 through 3 {
+    .productos{
+        div{
+            &:nth-child(#{$i}){
+                background-image: url(../../assets/img-products/product-#{$i}.jpg);
+            }
+        }
+    }
+}

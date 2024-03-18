@@ -1,0 +1,173 @@
+$vista: desktop;
+
+body{
+@if $vista ==desktop{
+    @media only screen and (min-width: 769px) and (max-width: 1500px){
+        header{
+            a{
+            img{
+                width: 150px;
+            }
+            }
+            nav{
+                display: flex;
+                align-items:normal;
+                ul{
+                    display: flex;
+                    gap:20px;
+                    list-style-type: none;
+                    li{
+                        text-align: right;
+                        padding-right:20px;
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            &:hover{
+                                color: orange;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .index{
+            div{
+                h1{
+                background-color: blanchedalmond;
+                display: flex;
+                justify-content: center;
+                }
+            }
+            section{
+                background-color: map-get($colores, color-fondo);
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(4fr, 750px);
+                .video{
+                    video{
+                        margin-top: 5%;
+                        margin: 50px;
+                        width: 350px;
+                        border-radius: 15px;
+                    }
+                }
+                .fondo{
+                    img{
+                        margin-top: 5%;
+                        margin: 50px;
+                        width: 350px;
+                        height: 150px;
+                        border-radius: 15px;        
+                    }
+                }
+                .explain{
+                    color: #fff;
+                    margin: 50px;
+                    width: 35vw;
+                    height:30vh;
+                    font-size:x-small;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    border: 2px solid orange;
+                    text-align: justify;
+                    padding: 10px;
+                    border-radius: 10px; 
+                    h2{
+                        text-align: center;
+                    }
+                    p{
+                        margin-bottom: 20px;
+                    }
+                    
+                    a{
+                        background-color: orange;
+                        color: #fff;
+                        padding: 10px 10px;
+                        border-radius: 10px;
+                        text-decoration: none;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+        .productos{
+            display:flex;
+            div{
+                width: 550px;
+                height: 450px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+@else{
+.index{
+    div{
+        h1{
+        background-color: blanchedalmond;
+        display: flex;
+        text-align: center;
+        }
+    }
+    section{
+        background-color: map-get($colores, color-fondo);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr, 200px);
+        .video{
+            video{
+                margin-top: 5%;
+                margin-left: 3px;
+                width: 100vw;
+                border-radius: 15px;
+            }
+        }
+        .fondo{
+            img{
+                margin-top: 5%;
+                margin-left: 3px;
+                width: 100vw;
+                border-radius: 15px;        
+            }
+        }
+        .explain{
+            color: #fff;
+            margin-left: 3px;
+            width:100vw;
+            height:150px;
+            font-size:x-small;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 2px solid orange;
+            text-align: justify;
+            padding: 5px;
+            border-radius: 10px; 
+            h2{
+                text-align: center;
+            }
+            p{
+                margin-bottom: 20px;
+            }
+            
+            a{
+                background-color: orange;
+                color: #fff;
+                padding: 10px 10px;
+                border-radius: 10px;
+                text-decoration: none;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+.productos{
+    display:flex;
+    div{
+        width: 250px;
+        height: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+}
+}

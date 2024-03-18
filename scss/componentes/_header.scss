@@ -1,0 +1,11 @@
+header{
+    @extend %header;
+    a{
+    img{
+        width: 150px;
+    }
+    }
+    nav{
+        @extend %nav-header;
+    }
+}

@@ -1,0 +1,58 @@
+.index{
+    div{
+        h1{
+        background-color: blanchedalmond;
+        display: flex;
+        text-align: center;
+        }
+    }
+    section{
+        background-color: map-get($colores, color-fondo);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr, 200px);
+        .video{
+            video{
+                margin-top: 5%;
+                margin-left: 3px;
+                width: 100vw;
+                border-radius: 15px;
+            }
+        }
+        .fondo{
+            img{
+                margin-top: 5%;
+                margin-left: 3px;
+                width: 100vw;
+                border-radius: 15px;        
+            }
+        }
+        .explain{
+            color: #fff;
+            margin-left: 3px;
+            width:100vw;
+            height:150px;
+            font-size:x-small;
+            background-color: rgba(0, 0, 0, 0.7);
+            border: 2px solid orange;
+            text-align: justify;
+            padding: 5px;
+            border-radius: 10px; 
+            h2{
+                text-align: center;
+            }
+            p{
+                margin-bottom: 20px;
+            }
+            
+            a{
+                background-color: orange;
+                color: #fff;
+                padding: 10px 10px;
+                border-radius: 10px;
+                text-decoration: none;
+                text-transform: capitalize;
+            }
+        }
+    }
+}

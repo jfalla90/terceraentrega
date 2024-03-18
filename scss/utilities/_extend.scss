@@ -1,0 +1,113 @@
+%header{
+    display: flex;
+    justify-content: space-between ;
+    background-color: $fondo;
+}
+
+.subir{
+    height: 25px;
+    width: 25px;
+    background-color: rgb(41, 40, 37);
+    border-radius: 50%;
+    position: fixed;
+    right: 10px;
+    bottom: 5px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 0px 0px 5px 5px #fff;
+}
+
+%title-footer{
+    display: flex;
+    justify-content: center;
+}
+
+%contacto-footer{
+    list-style: none;
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+%colo-hover-footer{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        color: orange;
+    }
+}
+
+%enlaces-footer{
+    display: inline-block;       
+    gap: 20px;
+    list-style-type: none;
+    li{
+        justify-content: right;
+    a{
+        text-decoration: none;
+        color: black;
+        &:hover{
+            color: orange;
+        }
+    }
+    }
+}
+
+%redes-footer{
+    text-align: center;
+    .fb{
+        text-decoration: none;
+        i{
+            color: rgb(68, 67, 64);
+            font-size: 30px;
+            letter-spacing: 15px;
+            &:hover{
+                color: map-get($colores, hover-fb);
+            }
+        }
+    }
+    .ig{
+        text-decoration: none;
+        i{
+            color: rgb(68, 67, 64);
+            font-size: 30px;
+            letter-spacing: 15px;
+            &:hover{
+                color: map-get($colores, hover-ig);
+            }
+        }
+    }
+    .wa{
+        text-decoration: none;
+        i{
+            color: rgb(68, 67, 64);
+            font-size: 30px;
+            letter-spacing: 15px;
+            &:hover{
+                color: map-get($colores, hover-wa);
+            }
+        }
+    }
+}
+
+%nav-header{
+    ul{
+        display: flex;
+        display: inline-block;
+        gap: 20px;
+        list-style-type: none;
+        li{
+            text-align: right;
+            padding-right: 10px;
+            a{
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    color: orange;
+                }
+            }
+        }
+    }
+}

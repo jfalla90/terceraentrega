@@ -1,0 +1,326 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(233, 202, 162, 0.942);
+}
+
+.subir {
+  height: 25px;
+  width: 25px;
+  background-color: rgb(41, 40, 37);
+  border-radius: 50%;
+  position: fixed;
+  right: 10px;
+  bottom: 5px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0px 0px 5px 5px #fff;
+}
+
+footer h3 {
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+footer ul li a:hover {
+  color: orange;
+}
+
+footer .footer1 .enlaces {
+  display: inline-block;
+  gap: 20px;
+  list-style-type: none;
+}
+footer .footer1 .enlaces li {
+  justify-content: right;
+}
+footer .footer1 .enlaces li a {
+  text-decoration: none;
+  color: black;
+}
+footer .footer1 .enlaces li a:hover {
+  color: orange;
+}
+
+footer .redes {
+  text-align: center;
+}
+footer .redes .fb {
+  text-decoration: none;
+}
+footer .redes .fb i {
+  color: rgb(68, 67, 64);
+  font-size: 30px;
+  letter-spacing: 15px;
+}
+footer .redes .fb i:hover {
+  color: rgb(66, 103, 178);
+}
+footer .redes .ig {
+  text-decoration: none;
+}
+footer .redes .ig i {
+  color: rgb(68, 67, 64);
+  font-size: 30px;
+  letter-spacing: 15px;
+}
+footer .redes .ig i:hover {
+  color: rgb(253, 36, 76);
+}
+footer .redes .wa {
+  text-decoration: none;
+}
+footer .redes .wa i {
+  color: rgb(68, 67, 64);
+  font-size: 30px;
+  letter-spacing: 15px;
+}
+footer .redes .wa i:hover {
+  color: rgb(37, 211, 102);
+}
+
+header nav ul {
+  display: flex;
+  display: inline-block;
+  gap: 20px;
+  list-style-type: none;
+}
+header nav ul li {
+  text-align: right;
+  padding-right: 10px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+header nav ul li a:hover {
+  color: orange;
+}
+
+.productos div:nth-child(1) {
+  background-image: url(../../assets/img-products/product-1.jpg);
+}
+
+.productos div:nth-child(2) {
+  background-image: url(../../assets/img-products/product-2.jpg);
+}
+
+.productos div:nth-child(3) {
+  background-image: url(../../assets/img-products/product-3.jpg);
+}
+
+.contacto {
+  border: 5px solid rgb(152, 213, 218);
+  border-radius: 20px;
+  margin: 20px 15px 20px 15px;
+  padding: 20px;
+}
+.contacto h1 {
+  text-align: center;
+}
+.contacto .mb-3 button {
+  background-color: rgb(152, 213, 218);
+  margin-top: 10px;
+}
+.contacto .mb-3 button:hover {
+  transform: scale(1.1);
+}
+
+.nosotros {
+  background-color: rgb(152, 213, 218);
+  align-items: center;
+  margin: 10px;
+}
+
+.ubicanos div {
+  text-align: center;
+}
+
+header a img {
+  width: 150px;
+}
+.index div h1 {
+  background-color: blanchedalmond;
+  display: flex;
+  text-align: center;
+}
+.index section {
+  background-color: rgb(152, 213, 218);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1fr, 200px);
+}
+.index section .video video {
+  margin-top: 5%;
+  margin-left: 3px;
+  width: 100vw;
+  border-radius: 15px;
+}
+.index section .fondo img {
+  margin-top: 5%;
+  margin-left: 3px;
+  width: 100vw;
+  border-radius: 15px;
+}
+.index section .explain {
+  color: #fff;
+  margin-left: 3px;
+  width: 100vw;
+  height: 150px;
+  font-size: x-small;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid orange;
+  text-align: justify;
+  padding: 5px;
+  border-radius: 10px;
+}
+.index section .explain h2 {
+  text-align: center;
+}
+.index section .explain p {
+  margin-bottom: 20px;
+}
+.index section .explain a {
+  background-color: orange;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1500px) {
+  body header a img {
+    width: 150px;
+  }
+  body header nav {
+    display: flex;
+    align-items: normal;
+  }
+  body header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+  }
+  body header nav ul li {
+    text-align: right;
+    padding-right: 20px;
+  }
+  body header nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  body header nav ul li a:hover {
+    color: orange;
+  }
+  body .index div h1 {
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+  }
+  body .index section {
+    background-color: rgb(152, 213, 218);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4fr, 750px);
+  }
+  body .index section .video video {
+    margin-top: 5%;
+    margin: 50px;
+    width: 350px;
+    border-radius: 15px;
+  }
+  body .index section .fondo img {
+    margin-top: 5%;
+    margin: 50px;
+    width: 350px;
+    height: 150px;
+    border-radius: 15px;
+  }
+  body .index section .explain {
+    color: #fff;
+    margin: 50px;
+    width: 35vw;
+    height: 30vh;
+    font-size: x-small;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid orange;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  body .index section .explain h2 {
+    text-align: center;
+  }
+  body .index section .explain p {
+    margin-bottom: 20px;
+  }
+  body .index section .explain a {
+    background-color: orange;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  body .productos {
+    display: flex;
+  }
+  body .productos div {
+    width: 550px;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+footer {
+  background-color: rgb(206, 222, 221);
+}
+footer .footer1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+footer .footer1 a img {
+  width: 150px;
+}
+footer ul li {
+  list-style: none;
+  display: block;
+  display: flex;
+  justify-content: center;
+}
+footer div p {
+  color: rgba(29, 28, 28, 0.953);
+  text-align: center;
+}
+.productos {
+  display: flex;
+}
+.productos div {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/**@media only screen and (min-width: 320px) and (max-width: 480px){}
+@media only screen and (min-width: 481px) and (max-width: 768px){}
+@media only screen and (min-width: 769px) and (max-width: 1024px){}
+@media only screen and (min-width: 1025px) and (max-width: 1200px){}**/
+
+/*# sourceMappingURL=style.css.map */

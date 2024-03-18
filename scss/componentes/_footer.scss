@@ -1,0 +1,35 @@
+
+footer{
+    background-color: map-get($colores, color-footer);
+    .footer1{
+        @include footer(flex,space-between,10px);
+        a{
+            img{
+                width: 150px;
+            }
+        }
+        .enlaces{
+            @extend %enlaces-footer;
+        }
+    }
+    h3{
+        @extend %title-footer;
+    }
+    ul{
+        li{
+            @include contacto-footer(flex,block,none,center);
+            a{
+                @extend %colo-hover-footer;
+            }
+        }
+    }
+    div{
+        p{
+            color: rgba(29, 28, 28, 0.953);
+            text-align: center;
+        }
+    }
+    .redes{
+        @extend %redes-footer;
+    }
+}
